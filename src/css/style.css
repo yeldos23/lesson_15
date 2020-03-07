@@ -308,11 +308,13 @@ template {
   border: none;
   border-radius: 2px;
   text-transform: uppercase; }
+  .button--primary {
+    background-color: #E3B873;
+    color: #ffffff; }
 
 .container {
   max-width: 1256px;
-  margin: auto;
-  border: 1px solid red; }
+  margin: auto; }
 
 .header {
   background-color: #131313;
