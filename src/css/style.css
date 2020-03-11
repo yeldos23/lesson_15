@@ -329,7 +329,7 @@ template {
   .button--primary {
     background-color: #E3B873;
     color: #ffffff;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.6);
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
     transition: box-shadow 0.3s; }
     .button--primary:hover {
       box-shadow: none; }
@@ -340,7 +340,13 @@ template {
     box-shadow: none;
     transition: box-shadow 0.3s; }
     .button--outline:hover {
-      box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.6); }
+      box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.3); }
+
+.hero__button, .contacts__button {
+  font-family: 'Futura Demi', sans-serif; }
+
+.hero__button {
+  min-width: 14.78571428571429rem; }
 
 .container {
   width: 85%;
@@ -385,6 +391,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  .menu__logo {
+    font-family: 'Futura Demi', sans-serif; }
 
 .logo {
   color: #E3B873;
@@ -452,12 +460,13 @@ body {
     align-items: center;
     left: 0;
     bottom: 0;
-    min-width: 17.6rem;
+    min-width: 17.6428rem;
     min-height: 6.92rem;
     background-color: #131313;
     text-transform: uppercase;
     color: #ffffff;
-    text-decoration: none; }
+    text-decoration: none;
+    font-family: 'Yeseva One', cursive; }
     .hero__scroll-down::after {
       content: '';
       background: url("../img/arrow-down.svg") no-repeat center;
@@ -471,7 +480,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #131313; }
+  background-color: #131313;
+  font-family: 'Futura Demi', sans-serif; }
   .instagram__link {
     display: flex;
     align-items: center;
@@ -497,13 +507,13 @@ body {
   .title--primary {
     color: #E3B873; }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1252px) {
   html {
     font-size: 12px; }
   nav__item {
     margin-right: 1rem; } }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1089px) {
   .nav {
     display: none; }
   .hero__instagram {
