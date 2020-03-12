@@ -323,7 +323,8 @@ template {
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
-  font-size: 0.93rem; }
+  font-size: 0.93rem;
+  white-space: normal; }
   .button:hover {
     cursor: pointer; }
   .button--primary {
@@ -389,7 +390,8 @@ body {
   justify-content: space-between;
   align-items: center; }
   .menu__logo {
-    font-family: 'Futura Demi', sans-serif; }
+    font-family: 'Futura Demi', sans-serif;
+    font-size: 1rem; }
 
 .logo {
   color: #E3B873;
@@ -400,7 +402,8 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   margin-right: 2.85rem;
-  transition: color 0.2s; }
+  transition: color 0.2s;
+  font-size: 1rem; }
   .nav__item:hover {
     color: #E3B873; }
 
@@ -408,7 +411,7 @@ body {
   color: #E3B873; }
 
 .contacts__phone {
-  margin-right: 45px;
+  margin-right: 3.21rem;
   font-weight: 500; }
 
 .hero {
@@ -457,9 +460,10 @@ body {
     align-items: center;
     left: 0;
     bottom: 0;
-    min-width: 17.6428rem;
+    min-width: 17.64rem;
     min-height: 6.92rem;
     background-color: #131313;
+    font-size: 0.85rem;
     text-transform: uppercase;
     color: #ffffff;
     text-decoration: none;
@@ -487,7 +491,7 @@ body {
     color: #E3B873;
     transform: rotate(90deg);
     line-height: 0.8;
-    font-size: 1.1rem; }
+    font-size: 1rem; }
     .instagram__link::after {
       content: '';
       width: 50px;
@@ -505,7 +509,7 @@ body {
   .title--primary {
     color: #E3B873; }
 
-@media screen and (max-width: 1265px) {
+@media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }
   .nav__item {
@@ -513,7 +517,7 @@ body {
   .hero__title {
     max-width: 31rem; } }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   .nav {
     display: none; }
   .hero__instagram {
@@ -529,19 +533,19 @@ body {
   .contacts__button {
     display: none; }
   .title {
-    font-size: 1.64rem;
+    font-size: 1.91rem;
     margin-bottom: 1.14rem; }
   .hero__scroll-down {
     display: none; }
   .hero__content {
-    max-width: 22.86rem; }
+    max-width: 26.6rem; }
   .hero__text {
-    font-size: 1.29rem;
-    margin-bottom: 2.28rem; }
+    font-size: 1.5rem;
+    margin-bottom: 2.6rem; }
   .hero__button {
     display: block;
-    min-width: 28.16rem;
-    margin-bottom: 1.85rem; } }
+    min-width: 26.6rem;
+    margin-bottom: 2.16rem; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
