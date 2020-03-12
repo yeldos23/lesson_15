@@ -481,7 +481,8 @@ img {
     top: 0;
     max-width: 5.85rem;
     height: 100%;
-    font-family: "Futura DemiC", sans-serif; }
+    font-family: "Futura DemiC", sans-serif;
+    font-weight: 600; }
   .hero__scroll-down {
     position: absolute;
     display: flex;
@@ -607,7 +608,13 @@ img {
     margin-top: 3px;
     font-size: 23px;
     line-height: 132.83%;
-    max-width: 27.14rem; } }
+    max-width: 27.14rem; }
+  .hero__text {
+    font-size: 18px; }
+  .hero__button {
+    font-size: 13px; }
+  .contacts__phone {
+    text-decoration: none; } }
 
 @media screen and (max-height: 530px) {
   .hero__scroll-down {
