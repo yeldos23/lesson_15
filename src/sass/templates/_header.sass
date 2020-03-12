@@ -13,28 +13,42 @@
   align-items: center
   &__logo
     font-family: 'Futura Demi', sans-serif
+    color: $primary
+    text-transform: uppercase
+    line-height: 1.14rem
     font-size: 1rem
-
-.logo
-  color: $primary
-  text-transform: uppercase
+    font-weight: 600
 
 .nav
   &__item
     color: $light
     text-decoration: none
     text-transform: uppercase
-    margin-right: 2.85rem
+    margin-right: 2.65rem
+    line-height: 1.14rem
     transition: color 0.2s
     font-size: 1rem
     &:hover
       color: $primary
-    
+  &__item:first-child
+    margin-left: -1.28rem
+  &__item:last-child
+    margin-left: 0rem
 
 .phone
   color: $primary
 
 .contacts
   &__phone
-    margin-right: 3.21rem
+    font-family: "Futura DemiC", sans-serif
+    font-style: normal
     font-weight: 500
+    line-height: 1.14rem
+    margin-right: 3rem
+    transition: color 0.2s
+    &:hover 
+      color: #fff
+  &__button
+    padding: 10px 20px
+
+    

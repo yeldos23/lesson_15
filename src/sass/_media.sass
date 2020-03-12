@@ -1,51 +1,67 @@
+@media screen and ( max-width: 1320px )
+  .nav__item
+    margin-right: 2rem
+    &:first-child
+      margin-left: 0rem
+  .contacts__phone
+    margin-right: 2rem
+  
 @media screen and ( max-width:  1200px)
   html
     font-size: 12px
-    
   .nav
     &__item
-      margin-right: 1rem
-
-  .hero
-    &__title
-      max-width: 31rem
+      margin-right: 1.5rem
+  .contact__phone
+    margin-right: 1.5rem
 
 
-@media screen and ( max-width:  992px)
+@media screen and ( max-width:  991px)
   .nav
-    display: none
+    &__item
+      display: none
   .hero
     &__instagram
       display: none
     &__content
       margin-left: 0
 
-@media screen and ( max-width: 570px)
-  .contacts
-    &__phone
-      margin-right: 0
-      color: $light
-      text-decoration: none
-    &__button
-      display: none
-  .title
-    font-size: 1.91rem
-    margin-bottom: 1.14rem
+@media screen and ( max-width: 768px)
   .hero
     &__scroll-down
       display: none
     &__content
-      max-width: 26.6rem
+      margin-left: 0rem
+
+@media screen and ( max-width: 576px)
+  .hero
     &__text
-      font-size: 1.5rem
-      margin-bottom: 2.6rem
+      max-width: 27.7rem
     &__button
       display: block
-      min-width: 26.6rem
+      width: 100%
+    .button--primary
       margin-bottom: 2.16rem
+  .contacts
+    &__phone
+      color: $light
+      margin-right: 0rem
+    &__button
+      display: none
+          
 
-@media screen and ( max-height: 520px)
+@media screen and ( max-width: 500px )
+  .container
+    width: 90%
+  .title
+    margin-top: 3px
+    font-size: 23px
+    line-height: 132.83%
+    max-width: 27.14rem
+  
+@media screen and ( max-height: 530px )
   .hero
     &__scroll-down
       display: none
+
   
