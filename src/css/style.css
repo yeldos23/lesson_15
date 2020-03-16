@@ -646,7 +646,7 @@ img {
   text-transform: uppercase;
   background-color: #E3B873;
   color: #ffffff;
-  padding: 1.214rem 2.6rem; }
+  padding: 1.1rem 3.7rem; }
 
 .design__section-title {
   margin-bottom: 2.85rem; }
@@ -662,6 +662,15 @@ img {
   margin-right: auto;
   max-width: 54.3rem;
   text-transform: none; }
+
+.card__design {
+  position: relative;
+  max-width: 23.6rem;
+  margin: 0 auto;
+  margin-top: -9.3rem;
+  padding: 1.79rem 2.14rem;
+  background-color: #fff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
 
 .modal {
   opacity: 0;
@@ -747,7 +756,9 @@ img {
   .types__card {
     margin-bottom: 5rem; }
   .card__text {
-    margin-left: auto; } }
+    margin-left: auto; }
+  .card__design {
+    margin-bottom: 6.5rem; } }
 
 @media screen and (max-width: 768px) {
   .hero__scroll-down {
@@ -773,7 +784,7 @@ img {
   .container {
     width: 90%; }
   h2.section-title__heading {
-    font-size: 1.8rem; }
+    font-size: 1.85rem; }
   .title {
     margin-top: 3px;
     font-size: 23px;
@@ -793,8 +804,11 @@ img {
       color: #ffffff; }
     .design__subtitle {
       max-width: 347px; }
-  .card__text {
-    margin-left: 0; } }
+  .card__design {
+    max-width: 22.4rem;
+    margin-top: -12rem;
+    margin-left: 0;
+    padding: 1.5rem 2.9rem; } }
 
 @media screen and (max-height: 530px) {
   .hero__scroll-down {
