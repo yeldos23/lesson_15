@@ -817,6 +817,8 @@ img {
       color: #ffffff; }
     .design__subtitle {
       max-width: 347px; }
+      .design__subtitle--mobile {
+        font-size: 1.07rem; }
   .card__text {
     margin-top: -11.5rem;
     margin-left: 0;
