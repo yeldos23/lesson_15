@@ -671,7 +671,7 @@ img {
   margin-top: 1.71rem;
   margin-left: auto;
   margin-right: auto;
-  max-width: 54.3rem;
+  max-width: 53rem;
   text-transform: none; }
 
 .card__design {
@@ -818,7 +818,8 @@ img {
     .design__subtitle {
       max-width: 347px; }
       .design__subtitle--mobile {
-        font-size: 1.07rem; }
+        font-size: 1.25rem;
+        max-width: 25.6rem; }
   .card__text {
     margin-top: -11.5rem;
     margin-left: 0;
