@@ -423,7 +423,8 @@ img {
     .section-title__image {
       display: flex;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      margin-bottom: 3.3rem; }
       .section-title__image::before, .section-title__image::after {
         content: '';
         width: 32px;
@@ -804,11 +805,17 @@ img {
       color: #ffffff; }
     .design__subtitle {
       max-width: 347px; }
+  .card__text {
+    margin-top: -11.5rem;
+    margin-left: 0;
+    padding: 1.5rem 2.9rem; }
   .card__design {
     max-width: 22.4rem;
     margin-top: -12rem;
     margin-left: 0;
-    padding: 1.5rem 2.9rem; } }
+    padding: 1.5rem 2.9rem; }
+  .types__card {
+    margin-bottom: 6.5rem; } }
 
 @media screen and (max-height: 530px) {
   .hero__scroll-down {
