@@ -423,8 +423,7 @@ img {
     .section-title__image {
       display: flex;
       align-items: center;
-      justify-content: center;
-      margin-bottom: 3.3rem; }
+      justify-content: center; }
       .section-title__image::before, .section-title__image::after {
         content: '';
         width: 32px;
@@ -647,10 +646,21 @@ img {
   text-transform: uppercase;
   background-color: #E3B873;
   color: #ffffff;
-  padding: 1.1rem 3.7rem; }
+  padding: 1rem 2.7rem; }
 
 .design__section-title {
   margin-bottom: 2.85rem; }
+
+.design__pricetag {
+  position: absolute;
+  left: 0;
+  bottom: -1.79rem;
+  font-size: 1.29rem;
+  font-family: 'Yeseva One', cursive;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #ffffff;
+  padding: 1.1rem 3.7rem; }
 
 .design__subtitle {
   font-family: "Futura Book", sans-serif;
@@ -786,6 +796,8 @@ img {
     width: 90%; }
   h2.section-title__heading {
     font-size: 1.85rem; }
+  .section-title__image {
+    margin-bottom: 3.3rem; }
   .title {
     margin-top: 3px;
     font-size: 23px;
