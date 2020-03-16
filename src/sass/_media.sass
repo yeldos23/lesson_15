@@ -32,6 +32,16 @@
       display: none
     &__content
       margin-left: 0rem
+  
+  .row
+    flex-direction: column
+    align-items: center
+  .types
+    &__card
+      margin-bottom: 5rem
+  .card
+    &__text
+      margin-left: 0
 
 @media screen and ( max-width: 576px)
   .hero
@@ -48,24 +58,6 @@
       margin-right: 0rem
     &__button
       display: none
-          
-@media screen and ( max-width: 570px )
-  .design
-    background-color: $dark
-    &__text
-      color: $light
-  .section-title__heading
-    color: $light
-  .row
-    flex-direction: column
-    align-items: center
-  .types
-    &__card
-      margin-bottom: 5rem
-  .card
-    &__text
-      margin-left: 0
-
 
 @media screen and ( max-width: 500px )
   .container
@@ -83,7 +75,13 @@
   .contacts
     &__phone
       text-decoration: none
-  
+  .design
+    background-color: $dark
+    &__section-title
+      color: $light
+    &__subtitle
+      max-width: 347px
+      
 @media screen and ( max-height: 530px )
   .hero
     &__scroll-down
