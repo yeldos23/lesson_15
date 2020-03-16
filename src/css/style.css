@@ -417,6 +417,7 @@ img {
     font-weight: normal;
     line-height: 2rem; }
     .section-title__heading {
+      font-size: 1.42rem;
       font-weight: normal;
       margin-bottom: 13px; }
     .section-title__image {
@@ -728,7 +729,9 @@ img {
   .nav__item {
     margin-right: 1.5rem; }
   .contact__phone {
-    margin-right: 1.5rem; } }
+    margin-right: 1.5rem; }
+  .hero__title {
+    max-width: 47.8rem; } }
 
 @media screen and (max-width: 991px) {
   .nav__item {
@@ -736,20 +739,20 @@ img {
   .hero__instagram {
     display: none; }
   .hero__content {
-    margin-left: 0; } }
-
-@media screen and (max-width: 768px) {
-  .hero__scroll-down {
-    display: none; }
-  .hero__content {
-    margin-left: 0rem; }
+    margin-left: 0; }
   .row {
     flex-direction: column;
     align-items: center; }
   .types__card {
     margin-bottom: 5rem; }
   .card__text {
-    margin-left: 0; } }
+    margin-left: auto; } }
+
+@media screen and (max-width: 768px) {
+  .hero__scroll-down {
+    display: none; }
+  .hero__content {
+    margin-left: 0rem; } }
 
 @media screen and (max-width: 576px) {
   .hero__text {
@@ -773,6 +776,8 @@ img {
     font-size: 23px;
     line-height: 132.83%;
     max-width: 27.14rem; }
+  .hero__title {
+    max-width: 32.5rem; }
   .hero__text {
     font-size: 18px; }
   .hero__button {
@@ -784,7 +789,9 @@ img {
     .design__section-title {
       color: #ffffff; }
     .design__subtitle {
-      max-width: 347px; } }
+      max-width: 347px; }
+  .card__text {
+    margin-left: 0; } }
 
 @media screen and (max-height: 530px) {
   .hero__scroll-down {

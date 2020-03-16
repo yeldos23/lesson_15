@@ -14,7 +14,9 @@
       margin-right: 1.5rem
   .contact__phone
     margin-right: 1.5rem
-
+  .hero
+    &__title
+      max-width: 47.8rem
 
 @media screen and ( max-width:  991px)
   .nav
@@ -25,14 +27,6 @@
       display: none
     &__content
       margin-left: 0
-
-@media screen and ( max-width: 768px)
-  .hero
-    &__scroll-down
-      display: none
-    &__content
-      margin-left: 0rem
-  
   .row
     flex-direction: column
     align-items: center
@@ -41,7 +35,14 @@
       margin-bottom: 5rem
   .card
     &__text
-      margin-left: 0
+      margin-left: auto
+
+@media screen and ( max-width: 768px)
+  .hero
+    &__scroll-down
+      display: none
+    &__content
+      margin-left: 0rem
 
 @media screen and ( max-width: 576px)
   .hero
@@ -68,6 +69,8 @@
     line-height: 132.83%
     max-width: 27.14rem
   .hero
+    &__title
+      max-width: 32.5rem
     &__text
       font-size: 18px
     &__button
@@ -81,6 +84,9 @@
       color: $light
     &__subtitle
       max-width: 347px
+  .card
+    &__text
+      margin-left: 0
       
 @media screen and ( max-height: 530px )
   .hero
