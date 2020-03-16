@@ -417,6 +417,7 @@ img {
     font-weight: normal;
     line-height: 2rem; }
     .section-title__heading {
+      font-weight: normal;
       margin-bottom: 13px; }
     .section-title__image {
       display: flex;
@@ -661,6 +662,8 @@ img {
   text-transform: none; }
 
 .modal {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   z-index: 199;
   left: 0;
@@ -672,6 +675,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center; }
+  .modal--visible {
+    opacity: 1;
+    visibility: visible; }
   .modal__dialog {
     position: relative;
     max-width: 36.36rem;
