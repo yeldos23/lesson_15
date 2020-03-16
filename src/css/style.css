@@ -624,6 +624,7 @@ img {
 .card__title {
   font-family: 'Yeseva One', cursive;
   font-size: 1.29rem;
+  font-weight: normal;
   margin-top: 0;
   margin-bottom: 0.7rem;
   line-height: 1.8rem; }
