@@ -832,6 +832,9 @@ img {
       font-style: normal;
       font-weight: normal;
       line-height: 135.84%; }
+    .design__pricetag {
+      bottom: -1.75rem;
+      padding: 1rem 4rem 1rem 3.5rem; }
   .card__text {
     max-width: 22.5rem;
     margin-top: -12rem;
