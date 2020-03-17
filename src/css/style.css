@@ -409,6 +409,16 @@ img {
 
 .section {
   padding: 60px 0; }
+  .section-design__image {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .section-design__image::before, .section-design__image::after {
+      content: '';
+      width: 32px;
+      height: 2px;
+      background-color: #E3B873;
+      margin: 0 10px; }
   .section-title {
     text-align: center;
     text-transform: uppercase;
@@ -795,9 +805,10 @@ img {
   .container {
     width: 90%; }
   h2.section-title__heading {
-    font-size: 1.85rem; }
+    font-size: 1.85rem;
+    margin-bottom: 1.4rem; }
   .section-title__image {
-    margin-bottom: 2rem; }
+    margin-bottom: 3.5rem; }
   .title {
     margin-top: 3px;
     font-size: 23px;
@@ -816,12 +827,14 @@ img {
     .design__section-title {
       color: #ffffff; }
     .design__subtitle {
-      max-width: 347px; }
-      .design__subtitle--mobile {
-        font-size: 1.25rem;
-        max-width: 25.6rem; }
+      max-width: 25rem;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 135.84%; }
   .card__text {
-    margin-top: -11.5rem;
+    max-width: 22.5rem;
+    margin-top: -12rem;
     margin-left: 0;
     padding: 1.5rem 2.9rem; }
   .card__design {

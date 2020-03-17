@@ -13,6 +13,16 @@ img
 
 .section
   padding: 60px 0
+  &-design__image
+    display: flex
+    align-items: center
+    justify-content: center
+    &::before, &::after
+      content: ''
+      width: 32px
+      height: 2px
+      background-color: $primary
+      margin: 0 10px
   &-title
     text-align: center
     text-transform: uppercase
