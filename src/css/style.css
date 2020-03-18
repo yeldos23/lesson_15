@@ -712,10 +712,11 @@ img {
     visibility: visible; }
   .modal__dialog {
     position: relative;
-    max-width: 36.36rem;
+    max-width: 36.142rem;
+    max-height: 36.357rem;
     background: #131313;
-    padding: 2.357rem 3.5rem 1.928rem;
-    background: #131313 url("../img/bg-lines.svg") no-repeat center;
+    padding: 2.357rem 3.5rem 1.928rem 3.5rem;
+    background: #131313 url("../img/bg-lines.png") no-repeat center;
     color: #ffffff; }
   .modal__close {
     position: absolute;
@@ -742,9 +743,11 @@ img {
       margin-bottom: 1rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
+  .modal .policy__label {
+    font-size: 1.142rem; }
   .modal__button {
     align-self: flex-end;
-    min-width: 15.2rem; }
+    padding: 1.25rem 3.2rem 1.25rem 3.2rem; }
 
 @media screen and (max-width: 1320px) {
   .nav__item {
