@@ -808,9 +808,19 @@ img {
     align-self: flex-end;
     padding: 1.25rem 3.2rem 1.25rem 3.2rem; }
 
+.project--title {
+  font-size: 1.92rem;
+  line-height: 2.64rem; }
+
+.project--image {
+  max-width: 100%; }
+
 .swiper-slide {
   display: flex;
   flex-wrap: wrap; }
+  .swiper-slide__value {
+    font-size: 1.07rem;
+    line-height: 1.42rem; }
   .swiper-slide__text {
     flex-basis: 50%;
     margin-bottom: 2.42rem;
@@ -818,6 +828,7 @@ img {
   .swiper-slide__heading {
     font-family: 'Yeseva One', cursive;
     font-size: 1.285rem;
+    font-weight: normal;
     line-height: 1.78rem;
     color: #E3B873;
     text-transform: uppercase;
