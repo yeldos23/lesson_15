@@ -38,7 +38,28 @@
       margin-left: auto
     &__design
       margin-bottom: 6.5rem
-
+  .col
+    &-44
+      width: 100%
+    &-56
+      width: 100%
+  .section
+    &-title
+      &__heading
+        font-size: 1.83rem
+        letter-spacing: -0.07em
+      &__text
+        font-size: 1.16rem
+  .swiper
+    &-slide
+      //justify-content: center
+      &__heading
+        font-size: 1.16rem
+      &__value
+        font-size: 1.16rem
+  .project
+    &--image
+      width: 100%
 @media screen and ( max-width: 768px)
   .hero
     &__scroll-down
@@ -65,7 +86,7 @@
 @media screen and ( max-width: 500px )
   .container
     width: 90%
-  h2.section-title__heading
+  .section-title__heading
     font-size: 1.85rem
     margin-bottom: 1.4rem
   .section-title__image
@@ -98,8 +119,6 @@
     &__pricetag
       bottom: -1.75rem
       padding: 1rem 4rem 1rem 3.5rem
-
-
   .card
     &__text
       max-width: 22.5rem
@@ -114,7 +133,33 @@
   .types
     &__card
       margin-bottom: 6.5rem
-      
+  .section
+    &-title
+      &__text
+        max-width: 24.6rem
+        line-height: 158.48%
+        margin-bottom: 1.4rem
+      &__word
+        &::after
+          display: none
+  .project
+    &--title
+      margin-bottom: 2.05rem
+    &--image
+      margin-top: 0
+  .swiper
+    &-slide
+      &__heading
+        margin-bottom: 0.7rem
+      &__text
+        flex-basis: 47%
+    &-button
+      &-prev, &-next
+        bottom: 34px
+  .col-44
+    margin-bottom: 0
+  .swiper-container-horizontal>.swiper-pagination-bullets
+    bottom: 34px
 @media screen and ( max-height: 530px )
   .hero
     &__scroll-down

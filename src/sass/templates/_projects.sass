@@ -1,11 +1,12 @@
 .project
-  &--title
-    font-size: 1.92rem
-    line-height: 2.64rem
   &--image
     max-width: 100%
+    margin-top: 1.6rem
   
 .swiper
+  &-nav
+    &-buttons
+      margin-top: 6.5rem
   &-slide
     display: flex
     flex-wrap: wrap
@@ -13,9 +14,10 @@
       font-size: 1.07rem
       line-height: 1.42rem
     &__text
-      flex-basis: 50%
-      margin-bottom: 2.42rem
-      padding-bottom: 2rem
+      flex-basis: 35%//50%
+      margin-top: 0.8rem
+      margin-bottom: 0
+      padding-bottom: 0.8rem
     &__heading
       font-family: 'Yeseva One', cursive
       font-size: 1.285rem
@@ -23,7 +25,7 @@
       line-height: 1.78rem
       color: $primary
       text-transform: uppercase
-      margin-bottom: 0.64rem
+      margin-bottom: 0.4rem
   &-pagination     
     &-bullet
       background-color: rgba($light, 0.3)
@@ -45,4 +47,6 @@
       background: url('../img/arrow-next.svg') no-repeat center
 .swiper-container-horizontal>.swiper-pagination-bullets
   width: auto
-  bottom: -2px
+  bottom: -1px
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet
+  margin: 0 10px
