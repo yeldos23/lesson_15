@@ -66,6 +66,8 @@
       display: none
     &__content
       margin-left: 0rem
+  .scroll-up
+    display: none
 
 @media screen and ( max-width: 576px)
   .hero
@@ -83,21 +85,35 @@
     &__button
       display: none
   .control
-    &__policy
-      &-label
-        margin-top: -8.5rem
+    &__button
+      order: 1
+      width: 100%
+      height: 4.25rem 
     &__input-group
       flex-basis: 100%
       margin-bottom: 5.25rem
+      &--phone
+        margin-bottom: 0.5rem
+    &__policy-label
+      margin-bottom: 5rem
 
 @media screen and ( max-width: 500px )
   .container
     width: 90%
-  .section-title__heading
-    font-size: 1.85rem
-    margin-bottom: 1.4rem
-  .section-title__image
-    margin-bottom: 3.5rem
+  .section
+    &-title
+      &__heading
+        font-size: 1.85rem
+        margin-bottom: 1.4rem
+      &__image
+        margin-bottom: 3.5rem
+      &__text
+        max-width: 24.6rem
+        line-height: 158.48%
+        margin-bottom: 1.4rem
+      &__word
+        &::after
+          display: none   
   .title
     margin-top: 3px
     font-size: 23px
@@ -140,15 +156,6 @@
   .types
     &__card
       margin-bottom: 6.5rem
-  .section
-    &-title
-      &__text
-        max-width: 24.6rem
-        line-height: 158.48%
-        margin-bottom: 1.4rem
-      &__word
-        &::after
-          display: none
   .project
     &--title
       margin-bottom: 2.05rem
@@ -167,10 +174,48 @@
     margin-bottom: 0
   .swiper-container-horizontal>.swiper-pagination-bullets
     bottom: 34px
+
   .control
+    &--dark
+      background-color: $dark
+      padding-bottom: 0rem
+    &-title
+      &__heading
+        font-size: 1.83rem
+        font-style: normal
+        font-weight: normal
+        line-height: 138.6%
+        letter-spacing: 0
+    &__text
+      color: $light
+      font-size: 1.166rem
+      line-height: 169.8%
+      margin-bottom: 3rem
+      &::before
+        margin-bottom: 1.2rem
+    &__input
+      font-size: 1.5rem
+      &-group--phone
+        margin-bottom: 0
+    &__label
+      color: $secondary
     &__button
-      width: 28.3rem
+      width: 100%
       height: 4.25rem
+      margin-bottom: -2rem
+    &__policy-label
+      color: $light
+      font-size: 1.33rem
+      justify-content: left
+      margin-top: 0
+    &__video
+      min-height: 17.25rem
+      background-size: cover
+      margin-bottom: 2.3rem
+      &--play
+        max-height: 63px
+        //max-width: 85px
+      
 @media screen and ( max-height: 530px )
   .hero
     &__scroll-down
