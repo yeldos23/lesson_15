@@ -336,7 +336,8 @@ template {
     box-shadow: 0rem 0.35rem 1.07rem rgba(227, 184, 115, 0.3);
     transition: box-shadow 0.3s; }
     .button--primary:hover {
-      border: 0.07rem solid #ffffff;
+      color: #E3B873;
+      border: 0.07rem solid #E3B873;
       box-shadow: 0rem 0.35rem 1.07rem rgba(255, 255, 255, 0.2);
       background-color: rgba(255, 255, 255, 0.2); }
   .button--outline {
@@ -1122,6 +1123,16 @@ img {
       margin-bottom: 1.2rem; }
   .control__input {
     font-size: 1.5rem; }
+    .control__input::-webkit-input-placeholder {
+      color: #ffffff; }
+    .control__input::-moz-placeholder {
+      color: #ffffff; }
+    .control__input:-ms-input-placeholder {
+      color: #ffffff; }
+    .control__input::-ms-input-placeholder {
+      color: #ffffff; }
+    .control__input::placeholder {
+      color: #ffffff; }
     .control__input-group--phone {
       margin-bottom: 0; }
   .control__label {
@@ -1129,7 +1140,8 @@ img {
   .control__button {
     width: 100%;
     height: 4.25rem;
-    margin-bottom: -2rem; }
+    margin-bottom: -2rem;
+    font-size: 1.25rem; }
   .control__policy-label {
     color: #ffffff;
     font-size: 1.33rem;
