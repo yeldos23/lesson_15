@@ -486,7 +486,7 @@ img {
         background-color: #E3B873;
         margin: 0 10px; }
 
-.scroll-up {
+.button__scroll-up {
   display: none;
   position: fixed;
   right: 10px;
@@ -501,7 +501,7 @@ img {
   animation: 3s linear 1s;
   opacity: 0.5;
   transition: 0.2s; }
-  .scroll-up .scroll-up::before {
+  .button__scroll-up::before {
     content: '';
     position: absolute;
     left: 0;
@@ -511,7 +511,7 @@ img {
     border: 3px solid #E3B873;
     border-radius: 50%;
     background: url(../img/arrow-up.svg) no-repeat center/50%; }
-  .scroll-up .scroll-up:hover {
+  .button__scroll-up:hover {
     opacity: 1; }
 
 .header {

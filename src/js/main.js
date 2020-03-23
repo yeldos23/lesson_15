@@ -59,10 +59,10 @@ $(document).ready(function () {
   var delay = 1000; // Задержка прокрутки
   $(window).scroll(function () { // При прокрутке попадаем в эту функцию
     /* В зависимости от положения полосы прокрукти и значения top_show, скрываем или открываем кнопку "Наверх" */
-    if ($(this).scrollTop() > top_show) $('.scroll-up ').fadeIn();
-    else $('.scroll-up ').fadeOut();
+    if ($(this).scrollTop() > top_show) $('.button__scroll-up ').fadeIn();
+    else $('.button__scroll-up ').fadeOut();
   });
-  $('.scroll-up ').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
+  $('.button__scroll-up ').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
     /* Плавная прокрутка наверх */
     $('body, html').animate({
       scrollTop: 0
@@ -95,7 +95,7 @@ $(document).ready(function () {
   next.css('left', prev.width() + 20 + bullets.width() + 20 );
   bullets.css('left', prev.width() + 20 );
   
-
+  new WOW().init();
 });
 
 

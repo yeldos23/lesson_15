@@ -66,7 +66,7 @@ img
         background-color: $primary
         margin: 0 10px
 
-.scroll-up
+.button__scroll-up
   display: none
   position: fixed
   right: 10px
@@ -81,7 +81,7 @@ img
   animation: 3s linear 1s
   opacity: 0.5
   transition: 0.2s
-  .scroll-up::before 
+  &::before 
     content: ''
     position: absolute
     left: 0
@@ -91,7 +91,7 @@ img
     border: 3px solid #E3B873
     border-radius: 50%
     background: url(../img/arrow-up.svg) no-repeat center/50%
-  .scroll-up:hover
+  &:hover
     opacity: 1
 
           
