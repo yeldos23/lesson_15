@@ -68,6 +68,12 @@
       margin-left: 0rem
   .scroll-up
     display: none
+  .footer
+    &__input
+      &-group
+        flex-basis: 100%
+    &__button
+      width: 100%
 
 @media screen and ( max-width: 576px)
   .hero
@@ -131,6 +137,7 @@
       text-decoration: none
   .design
     background-color: $dark
+    padding: 0
     &__section-title
       color: $light
     &__subtitle
@@ -217,7 +224,28 @@
       margin-bottom: 2.3rem
       &--play
         max-height: 63px
-        //max-width: 85px
+  .footer
+    background: $dark
+    &__container
+    &__wrap
+      margin-top: 0
+      background-color: $dark
+    &__title
+      font-size: 1.7rem
+      margin-bottom: 4.5rem
+    &__input
+      font-size: 1.5rem
+      &-group
+        margin-bottom: 5.35rem
+        &--full-width
+          margin-bottom: 0.5rem
+    &__policy
+      margin-bottom: 6rem
+    &__button
+  .policy
+    &__label
+      &--left
+        justify-content: left
       
 @media screen and ( max-height: 530px )
   .hero
