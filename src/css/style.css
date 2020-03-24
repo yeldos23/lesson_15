@@ -1198,6 +1198,7 @@ img {
     .control__text::before {
       margin-bottom: 1.2rem; }
   .control__input {
+    color: #ffffff;
     font-size: 1.5rem; }
     .control__input::-webkit-input-placeholder {
       color: #ffffff; }

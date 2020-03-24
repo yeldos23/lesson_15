@@ -102,7 +102,6 @@ $(document).ready(function () {
   
   // ### АНИМАЦИИ ###
   new WOW().init();
-
   // ### ВАЛИДАЦИЯ ФОРМЫ ###
   $('.modal__form').validate({
     errorElement: "div", // чтобы сделать error элемент div, а не label 
@@ -116,7 +115,7 @@ $(document).ready(function () {
 
       userPhone: {
         required: true,
-        minlength: 18
+        minlength: 10
       },
       
       userEmail: {
@@ -143,6 +142,83 @@ $(document).ready(function () {
     }
   });
 
+  $('.control__form').validate({
+    errorElement: "div", // чтобы сделать error элемент div, а не label 
+    errorClass: "invalid", // чтобы сделать error элемент классом invalid
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+
+      userPhone: {
+        required: true,
+        minlength: 10
+      },
+
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+
+    // Сообщения
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче 2-х букв",
+        maxlength: "Имя не длинее 15-и букв"
+      },
+      userPhone: {
+        required: "Заполните поле",
+        minlength: "Не меньше 10-и цифр"
+      },
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email: name@domain.com"
+      }
+    }
+  });
+
+  $('.footer__form').validate({
+    errorElement: "div", // чтобы сделать error элемент div, а не label 
+    errorClass: "invalid", // чтобы сделать error элемент классом invalid
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+
+      userPhone: {
+        required: true,
+        minlength: 10
+      },
+
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+
+    // Сообщения
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче 2-х букв",
+        maxlength: "Имя не длинее 15-и букв"
+      },
+      userPhone: {
+        required: "Заполните поле",
+        minlength: "Не меньше 10-и цифр"
+      },
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email: name@domain.com"
+      }
+    }
+  });
   // ### JQUERY МАСКИ ###
   // Маска для телефона
   $('[type=tel]').mask('+7(000) 000-00-00', { placeholder: "+7 (___) ___-__-__"});
