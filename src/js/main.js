@@ -34,27 +34,31 @@ $(document).ready(function () {
       modalBtn = $('[data-toggle=modal]'),
       closeBtn = $('.modal__close');
 
-
+  // ### ОТКРЫТЬ МОДАЛЬНОЕ ОКНО ###
   modalBtn.on('click', function () {
     modal.toggleClass('modal--visible');
     }
   );
-
+  // ### ЗАКРЫТЬ МОДАЛЬНОЕ ОКНО ###
   closeBtn.on('click', function () {
     modal.toggleClass('modal--visible');
     }
   );
+  // ### ЗАКРЫТЬ МОДАЛЬНОЕ ОКНО КЛАВИШЕЙ ESC ###
   $(document).on('keydown', function (event) {
     if (event.code == 'Escape') {
       modal.removeClass('modal--visible');
       }
     }
   );
+  /*
+  // ### ЗАКРЫТЬ МОДАЛЬНОЕ ОКНО КЛИКОМ ВНЕ ОКНА ###
   $(document).on('click', '.modal', function () {
       modal.removeClass('modal--visible'); 
       }
-  );
+  ); */
 
+  // ### КНОПКА НАВЕРХ ###
   var top_show = 500; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
   var delay = 1000; // Задержка прокрутки
   $(window).scroll(function () { // При прокрутке попадаем в эту функцию
@@ -69,6 +73,7 @@ $(document).ready(function () {
     }, delay);
   });
 
+  // ### СЛАЙДЕР ###
   //initialize swiper when document ready
   var mySwiper = new Swiper('.swiper-container', {
     loop: true,
@@ -95,7 +100,54 @@ $(document).ready(function () {
   next.css('left', prev.width() + 20 + bullets.width() + 20 );
   bullets.css('left', prev.width() + 20 );
   
+  // ### АНИМАЦИИ ###
   new WOW().init();
+
+  // ### ВАЛИДАЦИЯ ФОРМЫ ###
+  $('.modal__form').validate({
+    errorElement: "div", // чтобы сделать error элемент div, а не label 
+    errorClass: "invalid", // чтобы сделать error элемент классом invalid
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+
+      userPhone: {
+        required: true,
+        minlength: 18
+      },
+      
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+    
+    // Сообщения
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче 2-х букв",
+        maxlength: "Имя не длинее 15-и букв"
+      }, 
+      userPhone: {
+        required: "Заполните поле",
+        minlength: "Не меньше 10-и цифр"
+      },
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email: name@domain.com"
+      }
+    }
+  });
+
+  // ### JQUERY МАСКИ ###
+  // Маска для телефона
+  $('[type=tel]').mask('+7(000) 000-00-00', { placeholder: "+7 (___) ___-__-__"});
+
+
 });
 
 

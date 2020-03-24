@@ -19,7 +19,7 @@
   &__dialog
     position: relative
     max-width: 36.142rem
-    max-height: 36.357rem
+    max-height: 40rem
     background: $dark
     padding: 2.357rem 3.5rem 1.928rem 3.5rem
     background: $dark url('../img/bg-lines.png') no-repeat center  
@@ -37,16 +37,22 @@
   &__title
     font-family: 'Yeseva One', cursive
     font-size: 1.357rem
+    line-height: 1.857rem
     text-align: center
     margin: 0
-    margin-bottom: 2.428rem
+    margin-bottom: 2rem
   &__form
     display: flex
     flex-direction: column
   &__input
-    margin-bottom: 3.428rem
-    &:last-of-type
-      margin-bottom: 1rem
+    &-group
+      display: flex
+      flex-direction: column
+      margin-bottom: 3.39rem//3.428rem
+      &--last
+        margin-bottom: 0.3rem
+    /*&:last-of-type
+      margin-bottom: 1rem*/
   &__policy
     margin-bottom: 2.7rem
   .policy__label

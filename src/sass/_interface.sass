@@ -41,8 +41,11 @@
   border: none
   border-bottom: 1px solid rgba(54, 54, 54, 0.3)
   font-size: 1.285rem
+  font-style: normal
+  font-weight: 500
+  line-height: 1.785rem
   color: $light
-  padding: 0.5rem 0
+  padding: 0.3rem 0
   &--light
     &::placeholder
       color: $light
@@ -69,4 +72,14 @@
     &--center
       justify-content: center
   
+.invalid
+    color: #bf2121
+    font-family: 'FuturaDemiC', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 1rem
+    line-height: 1.428rem; 
+input
+  &.invalid
+    border-bottom: 1px solid red
   
