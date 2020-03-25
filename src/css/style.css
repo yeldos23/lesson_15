@@ -396,7 +396,7 @@ template {
   .policy__label--center {
     justify-content: center; }
 
-.invalid {
+div.invalid {
   color: #bf2121;
   font-family: 'FuturaDemiC', sans-serif;
   font-style: normal;
@@ -766,7 +766,8 @@ img {
   margin-bottom: -2px; }
 
 .control__button {
-  padding: 1.2857rem 4.785rem; }
+  padding: 1.2857rem 4.785rem;
+  height: 3.8rem; }
 
 .control__input {
   color: #131313; }
@@ -907,6 +908,28 @@ img {
   .footer__menu {
     background-color: #131313;
     padding: 4.285rem 0; }
+  .footer__map {
+    min-height: 465px;
+    max-width: 925px;
+    margin-bottom: 4rem; }
+  .footer__text {
+    max-width: 32rem;
+    margin: auto;
+    margin-bottom: 1.7rem;
+    text-align: center;
+    font-family: 'Yeseva One', cursive;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: normal;
+    color: #E3B873;
+    text-transform: uppercase;
+    line-height: 2rem;
+    letter-spacing: -0.06em; }
+  .footer__img {
+    text-align: center;
+    margin-bottom: 2.7rem; }
+    .footer__img--icon {
+      margin-right: 11px; }
 
 .modal {
   opacity: 0;
