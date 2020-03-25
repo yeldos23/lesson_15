@@ -254,7 +254,7 @@ $(document).ready(function () {
       });
 
     myMap.geoObjects
-      .add(myPlacemark)
+      .add(myPlacemark);
   });
 
 });
