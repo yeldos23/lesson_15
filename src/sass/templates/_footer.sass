@@ -49,21 +49,31 @@
     max-width: 925px
     margin-bottom: 4rem
   &__text
-    max-width: 32rem
+    max-width: 33rem
     margin: auto
     margin-bottom: 1.7rem
     text-align: center
     &__description
-    font-family: 'Yeseva One', cursive
-    font-size: 1rem
-    font-style: normal
-    font-weight: normal
-    color: $primary
-    text-transform: uppercase
-    line-height: 2rem
-    letter-spacing: -0.06em
+      font-family: 'Yeseva One', cursive
+      font-size: 1.6rem
+      font-style: normal
+      font-weight: normal
+      color: $primary
+      text-transform: uppercase
+      line-height: 2rem    
+      letter-spacing: -0.07em  
+    &--phone
+      color: $primary
+      text-decoration: none
+      transition: color 0.2s
+      &:hover
+        color: $light
   &__img
     text-align: center
     margin-bottom: 2.7rem
     &--icon
       margin-right: 11px
+  &__ymap
+    &--container
+      display: flex
+      justify-content: center

@@ -913,23 +913,33 @@ img {
     max-width: 925px;
     margin-bottom: 4rem; }
   .footer__text {
-    max-width: 32rem;
+    max-width: 33rem;
     margin: auto;
     margin-bottom: 1.7rem;
-    text-align: center;
-    font-family: 'Yeseva One', cursive;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: normal;
-    color: #E3B873;
-    text-transform: uppercase;
-    line-height: 2rem;
-    letter-spacing: -0.06em; }
+    text-align: center; }
+    .footer__text__description {
+      font-family: 'Yeseva One', cursive;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: normal;
+      color: #E3B873;
+      text-transform: uppercase;
+      line-height: 2rem;
+      letter-spacing: -0.07em; }
+    .footer__text--phone {
+      color: #E3B873;
+      text-decoration: none;
+      transition: color 0.2s; }
+      .footer__text--phone:hover {
+        color: #ffffff; }
   .footer__img {
     text-align: center;
     margin-bottom: 2.7rem; }
     .footer__img--icon {
       margin-right: 11px; }
+  .footer__ymap--container {
+    display: flex;
+    justify-content: center; }
 
 .modal {
   opacity: 0;
