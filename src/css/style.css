@@ -908,15 +908,15 @@ img {
   .footer__menu {
     background-color: #131313;
     padding: 4.285rem 0; }
-  .footer__map {
-    min-height: 465px;
-    max-width: 925px;
-    margin-bottom: 4rem; }
+  .footer__header {
+    text-align: center;
+    margin-bottom: 2.7rem; }
+    .footer__header--second {
+      display: none; }
   .footer__text {
     max-width: 33rem;
     margin: auto;
-    margin-bottom: 1.7rem;
-    text-align: center; }
+    margin-bottom: 1.7rem; }
     .footer__text__description {
       font-family: 'Yeseva One', cursive;
       font-size: 1.6rem;
@@ -932,23 +932,21 @@ img {
       transition: color 0.2s; }
       .footer__text--phone:hover {
         color: #ffffff; }
-  .footer__img {
-    text-align: center;
-    margin-bottom: 2.7rem; }
-    .footer__img--icon {
-      margin-right: 11px; }
+  .footer__img--mail {
+    margin-right: 10px; }
+  .footer__img--instagram {
+    margin-right: 10px; }
+  .footer__map {
+    height: 465px; }
   .footer__ymap--container {
     position: relative;
     margin: 0 auto 4rem auto;
     max-width: 925px;
-    max-height: 465px;
-    width: 100%;
-    height: 100%;
     overflow: hidden;
     cursor: pointer;
     background: url("../img/footer/footer__ymap.jpg") #ffffff no-repeat;
     background-position: center center;
-    box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 0 2em 0 rgba(19, 19, 19, 0.2); }
 
 .modal {
   opacity: 0;
@@ -1295,6 +1293,31 @@ img {
     .footer__button {
       font-size: 1.25rem;
       padding: 1.55rem 0; }
+    .footer__text {
+      max-width: 27rem;
+      margin-bottom: 2rem; }
+      .footer__text__description {
+        letter-spacing: -0.04rem; }
+    .footer__img {
+      display: flex;
+      justify-content: space-around;
+      margin: auto;
+      max-width: 120px; }
+      .footer__img--icon {
+        width: 37px; }
+    .footer__ymap--container {
+      margin-bottom: 3.5rem; }
+    .footer__header {
+      display: none;
+      margin-bottom: 0;
+      padding-bottom: 35px; }
+      .footer__header--second {
+        display: block; }
+    .footer__map {
+      width: 340px;
+      height: 255px; }
+    .footer__menu {
+      display: none; }
   .policy__label--left {
     justify-content: left;
     font-size: 1.333rem; } }
