@@ -103,6 +103,19 @@ $(document).ready(function () {
   // ### АНИМАЦИИ ###
   new WOW().init();
   // ### ВАЛИДАЦИЯ ФОРМЫ ###
+  /*$('form').validate({
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log('Ajax сработал. Ответ сервера: ' + response);
+        }
+      });
+    }
+  }),*/
+
   $('.modal__form').validate({
     errorElement: "div", // чтобы сделать error элемент div, а не label 
     errorClass: "invalid", // чтобы сделать error элемент классом invalid
@@ -146,7 +159,7 @@ $(document).ready(function () {
         url: "send.php",
         data: $(form).serialize(),
         success: function (response) {
-          console.log('Ajax сработал. Ответ сервера: ' + responce);
+          console.log('Ajax сработал. Ответ сервера: ' + response);
         }
       });
     }
