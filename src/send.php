@@ -16,16 +16,16 @@ try {
     //Server settings
     $mail->SMTPDebug = 0;                      // Enable verbose debug output
     $mail->isSMTP();                                            // Send using SMTP
-    $mail->Host       = 'smtp.yandex.ru';                    // Set the SMTP server to send through
+    $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'yeldos23@yandex.ru';                     // SMTP username
-    $mail->Password   = 'lolsvoqwe231100';                               // SMTP password
+    $mail->Username   = 'sabyrbayev@gmail.com';                     // SMTP username
+    $mail->Password   = 'Lucifer228';                               // SMTP password
     $mail->SMTPSecure = 'ssl';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
     $mail->Port       = 465;                                    // TCP port to connect to
     $mail->CharSet = "utf-8";
 
     //Recipients
-    $mail->setFrom('yeldos23@yandex.ru', 'Елдос');
+    $mail->setFrom('sabyrbayev@gmail.com', 'Елдос');
     $mail->addAddress('yeldos23@yandex.ru');     // Add a recipient
 
     // Content
