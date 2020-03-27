@@ -224,13 +224,15 @@
         <form action="send.php" method="POST" class="form control__form">
 
           <div class="control__input-group">
-            <label for="user-name" class="label form__label control__label">Имя</label>
-            <input name="userName" autocomplete="off" type="text" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
+            <label for="control__user-name" class="label form__label control__label">Имя</label>
+            <input name="userName" autocomplete="off" type="text" class="input form__input control__input"
+              id="control__user-name" placeholder="Как вас зовут:">
           </div>
 
           <div class="control__input-group control__input-group--phone">
-            <label for="user-phone" class="label form__label control__label">Телефон</label>
-            <input name="userPhone" autocomplete="off" type="tel" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона:">
+            <label for="control__user-phone" class="label form__label control__label">Телефон</label>
+            <input name="userPhone" autocomplete="off" type="tel" class="input form__input control__input"
+              id="control__user-phone" placeholder="Ваш номер телефона:">
           </div>
 
           <button class="button button--primary control__button">Отправить</button>
@@ -499,21 +501,21 @@
         <h3 class="footer__title">Остались вопросы?</h3>
         <form action="send.php" method="POST" class="form footer__form">
           <div class="input-group footer__input-group">
-            <label for="user-name" class="label form__label label--light footer__label">Имя</label>
-            <input type="text" name="userName" autocomplete="off" class="input form__input footer__input input--light" id="user-name"
+            <label for="modal__user-name" class="label form__label label--light footer__label">Имя</label>
+            <input type="text" name="userName" autocomplete="off" class="input form__input footer__input input--light" id="modal__user-name"
               placeholder="Как вас зовут:">
           </div>
           <!-- /.input-group footer__input-group -->
           <div class="input-group footer__input-group">
-            <label for="user-phone" class="label form__label label--light footer__label">Телефон</label>
-            <input type="tel" name="userPhone" autocomplete="off" class="input form__input footer__input input--light" id="user-phone"
+            <label for="footer__user-phone" class="label form__label label--light footer__label">Телефон</label>
+            <input type="tel" name="userPhone" autocomplete="off" class="input form__input footer__input input--light" id="footer__user-phone"
               placeholder="Ваш номер телефона:">
           </div>
           <!-- /.input-group footer__input-group -->
           <div class="input-group footer__input-group footer__input-group--full-width">
-            <label for="user-question" class="label form__label label--light footer__label">Вопрос</label>
+            <label for="footer__user-question" class="label form__label label--light footer__label">Вопрос</label>
             <input type="text" autocomplete="off" class="input form__input footer__input input--light"
-              id="user-question"
+              id="footer__user-question"
               placeholder="Я хочу спросить">
           </div>
           <!-- /.input-group footer__input-group -->
@@ -603,20 +605,20 @@
       <form action="send.php" method="POST" class="form modal__form">
 
         <div class="input-group modal__input-group">
-          <label for="user-name" class="label form__label label--light">Имя</label>
-          <input type="text" autocomplete="off" name="userName" class="input form__input modal__input input--light" id="user-name"
+          <label for="modal__user-name" class="label form__label label--light">Имя</label>
+          <input type="text" autocomplete="off" name="userName" class="input form__input modal__input input--light" id="modal__user-name"
             placeholder="Как вас зовут:">
         </div>
         <!-- ### input-group modal__input-group ###-->
         <div class="input-group modal__input-group">
-          <label for="user-phone" class="label form__label label--light">Телефон</label>
-          <input type="tel" autocomplete="off" name="userPhone" class="input form__input modal__input input--light" id="user-phone"
+          <label for="modal__user-phone" class="label form__label label--light">Телефон</label>
+          <input type="tel" autocomplete="off" name="userPhone" class="input form__input modal__input input--light" id="modal__user-phone"
             placeholder="Ваш номер телефона:">
         </div>
         <!-- ### input-group modal__input-group ###-->
         <div class="input-group modal__input-group modal__input-group--last">
-          <label for="user-email" class="label form__label label--light">Email</label>
-          <input type="email" autocomplete="off" name="userEmail" class="input form__input modal__input input--light" id="user-email"
+          <label for="modal__user-email" class="label form__label label--light">Email</label>
+          <input type="email" autocomplete="off" name="userEmail" class="input form__input modal__input input--light" id="modal__user-email"
             placeholder="Ваш email">
         </div>
         <!-- ### input-group modal__input-group ###-->
