@@ -19,6 +19,7 @@
     "gulp-sass": "^4.0.2"
   },
   "dependencies": {
-    "browser-sync": "^2.26.7"
+    "browser-sync": "^2.26.7",
+    "sweetalert": "^2.1.2"
   }
 }

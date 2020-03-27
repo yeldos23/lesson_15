@@ -25,7 +25,7 @@ try {
     $mail->CharSet = "utf-8";
 
     //Recipients
-    $mail->setFrom('repairdesignsite@gmail.com');
+    $mail->From = ('repairdesignsite@gmail.com');
     $mail->addAddress('info@sabyrbayev.kz');     // Add a recipient
 
     // Content
