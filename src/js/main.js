@@ -32,13 +32,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
 $(document).ready(function () {
   var modal = $('.modal'),
       modalBtn = $('[data-toggle=modal]'),
-      closeBtn = $('.modal__close');
+      closeBtn = $('.modal__close'),
+      thanksBtn = $('[data-toggle=thanks]');
 
   // ### ОТКРЫТЬ МОДАЛЬНОЕ ОКНО ###
   modalBtn.on('click', function () {
     modal.toggleClass('modal--visible');
     }
   );
+  thanksBtn.on('click', function () {
+    thanks.toggleClass('thanks--visible');
+  });
   // ### ЗАКРЫТЬ МОДАЛЬНОЕ ОКНО ###
   closeBtn.on('click', function () {
     modal.toggleClass('modal--visible');
@@ -160,6 +164,13 @@ $(document).ready(function () {
         data: $(form).serialize(),
         success: function (response) {
           console.log('Ajax сработал. Ответ сервера: ' + response);
+          alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+          $(form)[0].reset();
+          modal.removeClass('modal--visible');
+        },
+        error: function (response) {
+          console.error('Ошибка запроса ' + response);
+          
         }
       });
     }
