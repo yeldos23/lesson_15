@@ -139,6 +139,16 @@ $(document).ready(function () {
         required: "Заполните поле",
         email: "Введите корректный email: name@domain.com"
       }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log('Ajax сработал. Ответ сервера: ' + responce);
+        }
+      });
     }
   });
 
