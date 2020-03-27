@@ -1002,11 +1002,10 @@ img {
       margin-bottom: 3.39rem; }
       .modal__input-group--last {
         margin-bottom: 0.3rem; }
-  .modal__policy {
-    margin-bottom: 2.7rem; }
   .modal .policy__label {
     font-size: 1.142rem; }
   .modal__button {
+    margin-top: 2.7rem;
     align-self: flex-end;
     padding: 1.25rem 3.2rem 1.25rem 3.2rem; }
 

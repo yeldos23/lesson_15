@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=daad87b1-30e6-404a-a801-ff76ef0f78eb&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=daad87b1-30e6-404a-a801-ff76ef0f78eb&lang=ru_RU"></script>
   <title>Repair Design Project</title>
 </head>
 
@@ -235,11 +235,11 @@
           </div>
 
           <button class="button button--primary control__button">Отправить</button>
-          <!-- /.button button--primary control__button -->
+          <!--### /.BUTTONS ### -->
 
           <div class="policy control__policy">
             <input type="checkbox" name="policy-checkbox" id="control__policy-checkbox" class="policy__checkbox" checked>
-            <label for="control__policy-checkbox" class="policy__label control__policy-label">Я соглашаюсь с обработкой данных</label>
+            <label for="control__policy-checkbox" class="policy__label control__policy-label" id="control_agree">Я соглашаюсь с обработкой данных</label>
           </div>
           <!-- /.policy -->
         </form>
@@ -524,8 +524,8 @@
               обработкой данных</label>
           </div>
           <!-- /.policy -->
-          <button class="button button--primary footer__button">Отправить</button>
-          <!-- /.button button--primary footer__button -->
+          <button class="button button--primary footer__button" id="footer_agree">Отправить</button>
+          <!--### BUTTONS ###-->
         </form>
         <!-- /.form modal__form -->
       </div>
@@ -537,12 +537,12 @@
           <span class="footer__text__description">Ростов на дону, Торговый центр Plaza Прямой телефон <a
               href="tel:+79997683299" class="footer__text--phone">+7 (999) 768 32 99</a></span>
         </div>
-        <a class="footer__img">
+        <div class="footer__img">
           <a href="#" target="_blank"><img src="img/footer/footer-mail.svg" alt="#"
               class="footer__img--icon footer__img--mail"></a>
           <a href="#" target="_blank"><img src="img/footer/footer-instagram.svg" alt="#"
               class="footer__img--icon footer__img--instagram"></a>
-        </a>
+          </div>
       </div>
 
       <!--### ЯНДЕКС КАРТА ###-->      
@@ -591,7 +591,7 @@
     </div>
     <!-- /.footer__menu -->
   </footer>
-  <!-- /.footer section section--dark -->
+  <!--### FOOTER END ###-->
 
   <div class="modal">
     <div class="modal__dialog">
@@ -626,8 +626,8 @@
           <label for="modal__policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных</label>
         </div>
         <!-- /.policy -->
-        <button class="button button--primary modal__button" data-toggle="thanks">Отправить заявку</button>
-        <!-- /.button button--primary modal__button -->
+        <button class="button button--primary modal__button" id="modal_agree">Отправить заявку</button>
+        <!--### BUTTONS ###-->
       </form>
       <!-- /.form modal__form -->
     </div>
@@ -636,12 +636,12 @@
   <!-- /.modal -->
 
 
-    <div class="thanks">
+    <div class="thanks" id="thanks">
       <div class="thanks__dialog">
         <button class="thanks__close"></button>
         <!-- /.thanks__close -->
         <h3 class="thanks__title">
-          
+
         </h3>
         <!-- /.thanks__title -->
 
@@ -657,7 +657,6 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="./js/jquery.vide.min.js"></script>
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script>new WOW().init();</script>
 <script src="js/jquery.validate.min.js"></script>
